@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+
+# Build output and caches
+dist/
+dist-ssr/
+.vite/
+.vite-temp/
+.cache/
+coverage/
+
+# Environment variables and machine-local configuration
+.env
+.env.*
+!.env.example
+*.local
+
+# Deployment state and local credentials
+.vercel/
+.aws/
+.codex/
+
+# Logs
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor files
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
