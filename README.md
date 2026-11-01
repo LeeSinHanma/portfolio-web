@@ -1,4 +1,4 @@
-# Kenny Asan — Developer Portfolio
+# Kenny Dael Asan — Developer Portfolio
 
 A dark editorial portfolio built in the existing React 19 / Vite 8 JavaScript project. Uses the already-installed Three.js, React Three Fiber, and Drei dependencies. No application dependencies were added.
 

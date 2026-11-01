@@ -55,7 +55,8 @@ export default function Navigation() {
           ka<span>↗</span>
         </a>
         <a className="nav-name" href="#home">
-          Kenny Asan<span>Independent mind. Connected work.</span>
+          {profile.name}
+          <span>Independent mind. Connected work.</span>
         </a>
         <button
           className="menu-toggle icon-button"

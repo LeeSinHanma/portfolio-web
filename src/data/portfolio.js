@@ -1,7 +1,6 @@
 // Source: Kenny_Dael_Asan_ATS_Resume.pdf. Omit unknown dates and links.
 export const profile = {
-  name: 'Kenny Dael C. Asan',
-  shortName: 'Kenny Asan',
+  name: 'Kenny Dael Asan',
   title: 'Software Engineer',
   specialty: 'Full-Stack & Mobile Developer',
   location: 'Taguig City, Philippines',
