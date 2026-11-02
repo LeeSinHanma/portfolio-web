@@ -29,6 +29,7 @@ The production site is generated in `dist/`. This is a JavaScript project; no se
 - All six resume projects, five working category filters, and accessible project-detail dialogs.
 - RideOut previews extracted from the supplied recordings and a silent 24-second recording that plays only on request.
 - Resume-derived about, grouped skills, employment, education, and CompTIA A+ certification.
+- All toolkit groups expanded initially, with locally hosted technology icons and skill-name tooltips on hover, focus, or tap.
 - A downloadable PDF, email copying with truthful success/failure feedback, email/telephone links, GitHub, and LinkedIn.
 - Local fonts, a favicon, social-preview artwork, SEO metadata, and a basic no-JavaScript content fallback.
 
@@ -45,6 +46,8 @@ The production site is generated in `dist/`. This is a JavaScript project; no se
 | `src/components/ProjectVisual.jsx` | Real RideOut screenshots and explicitly labeled conceptual illustrations for SentryDrive/Signify. |
 | `src/components/ProjectDialog.jsx` | Project contributions, available external links, optional video, and keyboard/focus handling. |
 | `src/components/Icon.jsx` | Consistent inline SVG icons. |
+| `src/components/SkillIcon.jsx` | Accessible technology-icon tiles, touch/focus/hover tooltips, and image fallback. |
+| `src/data/skillIcons.js` | Skill-to-logo/symbol mappings. |
 | `src/index.css` | Design tokens, layouts, responsive styles, interactions, and reduced-motion rules. |
 | `index.html` | Page title, description, Open Graph/Twitter metadata, and no-JavaScript fallback. |
 | `vite.config.js` | Vite, optimized-public-asset copying, and production URL metadata. |
@@ -62,6 +65,7 @@ The same stylesheet defines a readable type scale: `--text-base` (1rem) for body
 - `public/documents/Kenny-Dael-Asan-Resume.pdf`: the downloadable copy of the supplied resume.
 - `public/ride-out-assets/`: the original user-supplied assets. These remain available in development and are intentionally excluded from production output by the Vite plugin. Do not point portfolio content at this source folder; put web-ready derivatives in `public/media/`.
 - `public/fonts/`: self-hosted Manrope and DM Sans, with their SIL Open Font License files.
+- `public/icons/`: selected Devicon and Simple Icons SVG logos, upstream attribution, and licenses.
 - `public/og-image.svg`: editable social-card source. `public/og-image.png` is the exported 1200 × 630 image used by metadata.
 
 The current production output is approximately 2.4 MB. The Three.js scene is a separate lazy-loaded chunk (approximately 269 KB compressed). Vite emits its normal large-chunk advisory for this optional scene; it is not a build failure. Reduced-motion and data-saving visitors do not download the scene chunk. Initial page rendering does not wait for 3D or video.

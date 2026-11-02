@@ -43,6 +43,62 @@ export default function Icon({ name = 'arrow', size = 20, ...props }) {
       </>
     ),
     plus: <path d="M12 5v14M5 12h14" />,
+    cube: (
+      <>
+        <path d="m12 2 9 5v10l-9 5-9-5V7Zm0 10 9-5M12 12 3 7m9 5v10M7.5 4.5l9 5" />
+      </>
+    ),
+    palette: (
+      <>
+        <path d="M12 3a9 9 0 1 0 0 18h1a2 2 0 0 0 1.4-3.4 1.5 1.5 0 0 1 1.1-2.6H18a4 4 0 0 0 4-4c0-4.4-4.5-8-10-8Z" />
+        <circle cx="7.5" cy="11" r=".6" />
+        <circle cx="10" cy="7" r=".6" />
+        <circle cx="15" cy="7" r=".6" />
+        <circle cx="18" cy="10" r=".6" />
+      </>
+    ),
+    database: (
+      <>
+        <ellipse cx="12" cy="5" rx="8" ry="3" />
+        <path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0" />
+      </>
+    ),
+    api: (
+      <>
+        <path d="m7 7-5 5 5 5m10-10 5 5-5 5m-4-13-2 16" />
+      </>
+    ),
+    network: (
+      <>
+        <rect x="9" y="2" width="6" height="6" rx="1" />
+        <rect x="2" y="16" width="6" height="6" rx="1" />
+        <rect x="16" y="16" width="6" height="6" rx="1" />
+        <path d="M12 8v4H5v4m7-4h7v4" />
+      </>
+    ),
+    tree: (
+      <>
+        <path d="M8 21h8m-4 0v-6M12 2l-6 7h3l-5 7h16l-5-7h3Z" />
+      </>
+    ),
+    brain: (
+      <>
+        <path d="M12 5a3 3 0 0 0-5-2 4 4 0 0 0-3 6 4 4 0 0 0 0 7 4 4 0 0 0 8 3Zm0 0a3 3 0 0 1 5-2 4 4 0 0 1 3 6 4 4 0 0 1 0 7 4 4 0 0 1-8 3M7 8l2 2m8-2-2 2M6 15h3m6 0h3" />
+      </>
+    ),
+    dataset: (
+      <>
+        <rect x="3" y="3" width="18" height="18" rx="2" />
+        <path d="M3 9h18M9 3v18M3 15h18M15 9v12" />
+      </>
+    ),
+    pipeline: (
+      <>
+        <circle cx="5" cy="5" r="3" />
+        <circle cx="19" cy="19" r="3" />
+        <path d="M8 5h6a5 5 0 0 1 0 10h-4a5 5 0 0 0-5 5m5-1 2-4-4-2" />
+      </>
+    ),
   }
   return (
     <svg

@@ -20,6 +20,7 @@ Verified locally on November 1, 2026 against the production Vite build, using Ch
 - Dialog keyboard navigation stays inside the dialog; Escape closes it and restores focus to the opener.
 - The original RideOut clip plays successfully in the project dialog.
 - Skill accordions reveal the corresponding technologies.
+- The updated toolkit shows all five groups expanded initially and all 41 skills as accessible icon tiles. All 29 local SVG logos loaded; hover, keyboard focus, Escape, category toggling, and touch tooltips passed browser checks. Tooltip positioning stayed within the mobile viewport, and desktop/mobile axe scans found zero violations in tested states.
 - Resume download returns a valid PDF.
 - Email copy writes the correct address to the clipboard and reports success.
 - Automated axe checks with WCAG 2 A/AA, 2.1 AA, and 2.2 AA tags found zero violations in the tested desktop and mobile page states.

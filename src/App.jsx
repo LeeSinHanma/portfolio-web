@@ -10,6 +10,7 @@ import Icon from './components/Icon'
 import Navigation from './components/Navigation'
 import HeroShowcase from './components/HeroShowcase'
 import Projects from './components/Projects'
+import SkillIcon from './components/SkillIcon'
 
 function Contact() {
   const [copyState, setCopyState] = useState('idle')
@@ -221,14 +222,14 @@ export default function App() {
               </h2>
             </div>
             <p>
-              Different challenges.
+              Different challenges.{' '}
               <br />
               The right tools for the job.
             </p>
           </div>
           <div className="skills-list">
-            {skillGroups.map((group, i) => (
-              <details className="skill-group" key={group.name} open={i < 2}>
+            {skillGroups.map((group) => (
+              <details className="skill-group" key={group.name} open>
                 <summary>
                   <span className="skill-icon">
                     <Icon name={group.icon} size={22} />
@@ -242,9 +243,13 @@ export default function App() {
                   </span>
                   <Icon name="plus" size={22} />
                 </summary>
-                <div className="skill-tags">
+                <div
+                  className="skill-icons"
+                  role="group"
+                  aria-label={`${group.name} technologies`}
+                >
                   {group.skills.map((skill) => (
-                    <span key={skill}>{skill}</span>
+                    <SkillIcon key={skill} skill={skill} />
                   ))}
                 </div>
               </details>
